@@ -38,7 +38,7 @@ section[id] {
 }
 
 .btn {
-  @apply px-6 py-3 rounded-md font-medium transition-colors;
+  @apply px-6 py-3 rounded-md font-medium transition-all duration-200 transform hover:scale-105;
 }
 
 .btn-primary {
@@ -47,6 +47,11 @@ section[id] {
 
 .btn-secondary {
   @apply bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600;
+}
+
+/* Navigation link hover effect */
+.nav-link {
+  @apply transition-all duration-200 transform hover:scale-110;
 }
 
 .section {

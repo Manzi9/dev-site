@@ -6,7 +6,7 @@ export default function About() {
     <section id="about" className="section bg-gray-50 dark:bg-gray-900">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">About Me</h2>
+          <h2 className="text-3xl font-bold mb-4">About</h2>
           <div className="h-1 w-20 bg-blue-600 mx-auto"></div>
         </div>
 

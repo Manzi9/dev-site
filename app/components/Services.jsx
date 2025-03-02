@@ -45,7 +45,24 @@ export default function Services() {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <p>Design and development included</p>
+                <p>Design and development</p>
+              </div>
+              <div className="flex items-start">
+                <svg
+                  className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+                <p>£25 a month hosting</p>
               </div>
               <div className="flex items-start">
                 <svg
@@ -96,7 +113,7 @@ export default function Services() {
                     d="M6 18L18 6M6 6l12 12"
                   ></path>
                 </svg>
-                <p>No 7 days a week support</p>
+                <p>7 days a week support</p>
               </div>
               <div className="flex items-start">
                 <svg
@@ -113,7 +130,7 @@ export default function Services() {
                     d="M6 18L18 6M6 6l12 12"
                   ></path>
                 </svg>
-                <p>No lifetime updates</p>
+                <p>Lifetime updates</p>
               </div>
             </div>
 
@@ -132,7 +149,7 @@ export default function Services() {
             <div className="text-center mb-6">
               <h3 className="text-2xl font-bold mb-2">Monthly Subscription</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Ongoing service and support
+                Minimum 6 months.
               </p>
               <div className="mt-4">
                 <span className="text-4xl font-bold">£140</span>
@@ -158,7 +175,7 @@ export default function Services() {
                     d="M5 13l4 4L19 7"
                   ></path>
                 </svg>
-                <p>Design and development included</p>
+                <p>Design and development</p>
               </div>
               <div className="flex items-start">
                 <svg

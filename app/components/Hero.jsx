@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20">
+    <section className="bg-gradient-to-br from-gray-900 via-blue-900 to-black text-white py-20">
       <div className="container mx-auto px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
           Web Development Services
@@ -13,13 +13,13 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a
             href="#services"
-            className="btn bg-white text-blue-600 hover:bg-gray-100"
+            className="btn bg-blue-500 text-white hover:bg-blue-600 transition-colors"
           >
             View Services
           </a>
           <a
             href="#contact"
-            className="btn bg-transparent border-2 border-white hover:bg-white/10"
+            className="btn bg-transparent border-2 border-blue-400 hover:bg-blue-900/30 transition-colors"
           >
             Contact Me
           </a>

@@ -1,9 +1,24 @@
 import React from "react";
+import Image from "next/image";
 
 export default function WhyChoose() {
   return (
-    <section id="why-choose" className="section bg-gray-50 dark:bg-gray-900">
-      <div className="container">
+    <section
+      id="why-choose"
+      className="section bg-gray-50 dark:bg-gray-900 relative"
+    >
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0 opacity-10">
+        <Image
+          src="/images/background.jpg"
+          alt="Background"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+
+      <div className="container relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Why Choose My Websites</h2>
           <div className="h-1 w-20 bg-blue-600 mx-auto mb-6"></div>

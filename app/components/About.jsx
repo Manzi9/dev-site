@@ -30,15 +30,19 @@ export default function About() {
             </p>
           </div>
 
-          <div className="relative h-80 md:h-full rounded-lg overflow-hidden shadow-xl">
-            <div className="absolute inset-0 bg-blue-600 opacity-10"></div>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center p-6">
-                <h3 className="text-2xl font-bold mb-4">Manzi</h3>
-                <p className="text-lg mb-6">Web Developer</p>
-                <p className="italic">
-                  "Creating websites that make a difference"
-                </p>
+          <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
+            <Image
+              src="/images/developer.jpg"
+              alt="Web Developer at work"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+            />
+            <div className="absolute inset-0 bg-blue-900/30 flex items-end p-6">
+              <div className="text-white">
+                <h3 className="text-2xl font-bold mb-2">Manzi</h3>
+                <p className="text-lg">Web Developer</p>
               </div>
             </div>
           </div>

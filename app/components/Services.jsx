@@ -23,7 +23,7 @@ export default function Services() {
                 One-time payment for your website
               </p>
               <div className="mt-4">
-                <span className="text-4xl font-bold">£1,299</span>
+                <span className="text-4xl font-bold">£1,800</span>
                 <span className="text-gray-500 dark:text-gray-400 ml-2">
                   + £25/month hosting
                 </span>
@@ -282,7 +282,7 @@ export default function Services() {
             <h2 className="text-3xl font-bold mb-4">Recent Projects</h2>
             <div className="h-1 w-20 bg-blue-600 mx-auto mb-6"></div>
             <p className="text-lg max-w-3xl mx-auto">
-              Take a look at some of my recent work
+              Check out what I've worked on in the past
             </p>
           </div>
 

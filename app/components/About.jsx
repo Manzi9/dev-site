@@ -12,34 +12,32 @@ export default function About() {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold">Hi, I'm Manzi</h3>
+            <h3 className="text-2xl font-semibold">Hey, I'm Manzi!</h3>
             <p className="text-lg">
-              I'm a passionate web developer with expertise in creating
-              beautiful, functional websites that help businesses succeed
-              online.
+              I'm a Web Developer that focusses on providing solutions to your
+              online needs. In today’s digital world, your website is often the
+              first impression customers get—so it needs to be fast, modern, and
+              easy to use.
             </p>
             <p className="text-lg">
-              With years of experience in web development, I specialize in
-              building responsive, user-friendly websites that not only look
-              great but also perform exceptionally well.
-            </p>
-            <p className="text-lg">
-              My approach focuses on understanding your business goals and
-              translating them into effective digital solutions that drive
-              results.
+              However, I've noticed that lots of businesses find the upfront
+              cost of a new website to be a big barrier in cementing their
+              online presence. I'm here to change that. With £0 down monthly
+              packages to ensure that a sleek, functional responsive website is
+              accessible to whoever needs one.
             </p>
           </div>
 
-          <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
+          <div className="relative h-96 rounded-lg overflow-hidden shadow-xl group">
             <Image
-              src="/images/developer.jpg"
+              src="/images/developer.png"
               alt="Web Developer at work"
               fill
-              className="object-cover"
+              className="object-cover transition-all duration-300"
               sizes="(max-width: 768px) 100vw, 50vw"
               priority
             />
-            <div className="absolute inset-0 bg-blue-900/30 flex items-end p-6">
+            <div className="absolute inset-0 bg-blue-900/30 flex items-end p-6 transition-opacity duration-300 group-hover:opacity-0">
               <div className="text-white">
                 <h3 className="text-2xl font-bold mb-2">Manzi</h3>
                 <p className="text-lg">Web Developer</p>

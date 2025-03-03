@@ -22,10 +22,6 @@ export default function WhyChoose() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Websites With Purpose</h2>
           <div className="h-1 w-20 bg-blue-600 mx-auto mb-6"></div>
-          <p className="text-lg max-w-3xl mx-auto">
-            I build websites that not only look great but also perform
-            exceptionally well.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">

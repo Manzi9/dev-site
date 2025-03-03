@@ -3,6 +3,17 @@ import React from "react";
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center bg-gray-950 overflow-hidden">
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover opacity-20"
+      >
+        <source src="/images/abstract.mp4" type="video/mp4" />
+      </video>
+
       {/* Background gradient with animation */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-gray-900 to-black"></div>
 

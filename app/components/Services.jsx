@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Services() {
   return (
@@ -22,7 +23,7 @@ export default function Services() {
                 One-time payment for your website
               </p>
               <div className="mt-4">
-                <span className="text-4xl font-bold">£1,299</span>
+                <span className="text-4xl font-bold">£1,800</span>
                 <span className="text-gray-500 dark:text-gray-400 ml-2">
                   + £25/month hosting
                 </span>
@@ -271,6 +272,109 @@ export default function Services() {
               >
                 Get Started
               </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Portfolio Section */}
+        <div className="mt-24">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Recent Projects</h2>
+            <div className="h-1 w-20 bg-blue-600 mx-auto mb-6"></div>
+            <p className="text-lg max-w-3xl mx-auto">
+              Check out what I've worked on in the past
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Project 1 */}
+            <div className="group overflow-hidden rounded-lg shadow-lg bg-gray-100 dark:bg-gray-700">
+              <div className="relative h-64 w-full">
+                <Image
+                  src="/images/ecommerce.jpg"
+                  alt="E-commerce Website"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">E-commerce Platform</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  A fully responsive online store with secure payment processing
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full dark:bg-blue-900 dark:text-blue-100">
+                    React
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full dark:bg-blue-900 dark:text-blue-100">
+                    Next.js
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full dark:bg-blue-900 dark:text-blue-100">
+                    Stripe
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 2 */}
+            <div className="group overflow-hidden rounded-lg shadow-lg bg-gray-100 dark:bg-gray-700">
+              <div className="relative h-64 w-full">
+                <Image
+                  src="/images/restaurant.jpg"
+                  alt="Restaurant Website"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Restaurant Website</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  An elegant website with online reservation system
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full dark:bg-blue-900 dark:text-blue-100">
+                    JavaScript
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full dark:bg-blue-900 dark:text-blue-100">
+                    Tailwind CSS
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full dark:bg-blue-900 dark:text-blue-100">
+                    API Integration
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 3 */}
+            <div className="group overflow-hidden rounded-lg shadow-lg bg-gray-100 dark:bg-gray-700">
+              <div className="relative h-64 w-full">
+                <Image
+                  src="/images/analytics.jpg"
+                  alt="Analytics Dashboard"
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Analytics Dashboard</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  A comprehensive data visualization platform
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full dark:bg-blue-900 dark:text-blue-100">
+                    React
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full dark:bg-blue-900 dark:text-blue-100">
+                    D3.js
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full dark:bg-blue-900 dark:text-blue-100">
+                    Firebase
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

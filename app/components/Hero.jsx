@@ -25,12 +25,11 @@ export default function Hero() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">
               Modern
             </span>{" "}
-            Web Development Services
+            Business Web Development
           </h1>
 
           <p className="text-xl md:text-2xl mb-10 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Professional, responsive websites tailored to your business needs
-            with a focus on performance and user experience
+            Modern Websites for Modern Businesses
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-6 mb-20">

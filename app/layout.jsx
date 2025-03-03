@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark scroll-smooth">
       <body className={`${inter.className} bg-gray-950 text-gray-200`}>
-        <header className="bg-black/80 text-white sticky top-0 z-50 backdrop-blur-md">
+        <header className="bg-black/70 text-white sticky top-0 z-50 backdrop-blur-md">
           <div className="container mx-auto px-6 py-4">
             <nav className="flex justify-between items-center">
               <a href="/" className="text-2xl font-light nav-link">

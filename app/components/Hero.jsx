@@ -23,13 +23,13 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white leading-tight">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">
-              Modern
+              Business
             </span>{" "}
-            Business Web Development
+            Web Development Solutions
           </h1>
 
           <p className="text-xl md:text-2xl mb-10 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Modern Websites for Modern Businesses
+            Show off a site that you're proud of.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-6 mb-20">

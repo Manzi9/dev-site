@@ -97,7 +97,7 @@ export default function Contact() {
             <div className="text-center md:text-left">
               <button
                 type="submit"
-                className="px-8 py-4 bg-blue-600 text-white rounded-lg transform transition-all duration-300 hover:bg-blue-700 hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                className="px-8 py-4 bg-blue-600 text-white rounded-lg transform transition-all duration-300 hover:bg-blue-700 hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <span className="flex items-center">
                   <span>Send Message</span>

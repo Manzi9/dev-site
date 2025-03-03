@@ -18,7 +18,7 @@ export default function Services() {
           {/* Lump Sum Package */}
           <div className="card border-t-4 border-blue-500 hover:shadow-lg transition-shadow">
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold mb-2">Lump Sum Package</h3>
+              <h3 className="text-2xl font-bold mb-2">Lump Sum</h3>
               <p className="text-gray-600 dark:text-gray-300">
                 One-time payment for your website
               </p>

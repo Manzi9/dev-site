@@ -15,7 +15,7 @@ export default function About() {
             <h3 className="text-2xl font-semibold">Hey, I'm Manzi!</h3>
             <p className="text-lg">
               I'm a Web Developer that focusses on providing solutions to your
-              online needs. In today’s digital world, your website is often the
+              online needs. In today's digital world, your website is often the
               first impression customers get—so it needs to be fast, modern, and
               easy to use.
             </p>
@@ -38,18 +38,21 @@ export default function About() {
           </div>
 
           <div className="relative h-96 rounded-lg overflow-hidden shadow-xl group">
-            <Image
-              src="/images/developer.png"
-              alt="Web Developer at work"
-              fill
-              className="object-cover transition-all duration-300"
-              sizes="(max-width: 768px) 100vw, 50vw"
-              priority
-            />
-            <div className="absolute inset-0 bg-blue-900/30 flex items-end p-6 transition-opacity duration-300 group-hover:opacity-0">
-              <div className="text-white">
-                <h3 className="text-2xl font-bold mb-2">Manzi</h3>
-                <p className="text-lg">Web Developer</p>
+            <div className="relative h-full w-full flex items-center justify-center">
+              <Image
+                src="/images/developer.png"
+                alt="Web Developer at work"
+                width={500}
+                height={500}
+                className="max-h-full max-w-full object-contain transition-all duration-300"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
+              <div className="absolute inset-0 bg-blue-900/30 flex items-end p-6 transition-opacity duration-300 group-hover:opacity-0">
+                <div className="text-white">
+                  <h3 className="text-2xl font-bold mb-2">Manzi</h3>
+                  <p className="text-lg">Web Developer</p>
+                </div>
               </div>
             </div>
           </div>

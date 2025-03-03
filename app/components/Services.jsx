@@ -1,14 +1,28 @@
+"use client";
+
 import React from "react";
+import {
+  Card,
+  CardHeader,
+  CardContent,
+  CardFooter,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
+import { CheckIcon, XIcon } from "lucide-react";
 import Image from "next/image";
 
 export default function Services() {
   return (
-    <section id="services" className="section bg-white dark:bg-gray-800">
-      <div className="container">
+    <section id="services" className="relative py-20 bg-background">
+      <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">My Services</h2>
-          <div className="h-1 w-20 bg-blue-600 mx-auto mb-6"></div>
-          <p className="text-lg max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4 text-foreground">
+            My Services
+          </h2>
+          <Separator className="w-20 mx-auto mb-6 bg-primary" />
+          <p className="text-lg max-w-3xl mx-auto text-muted-foreground">
             I offer professional web development services tailored to your
             needs. Choose the package that works best for you.
           </p>
@@ -16,280 +30,96 @@ export default function Services() {
 
         <div className="grid md:grid-cols-2 gap-8 mt-12">
           {/* Lump Sum Package */}
-          <div className="card border-t-4 border-blue-500 hover:shadow-lg transition-shadow">
-            <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold mb-2">Lump Sum</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+          <Card className="relative overflow-hidden border-t-4 border-primary">
+            <CardHeader className="text-center space-y-2">
+              <h3 className="text-2xl font-bold">Lump Sum</h3>
+              <p className="text-muted-foreground">
                 One-time payment for your website
               </p>
               <div className="mt-4">
                 <span className="text-4xl font-bold">£1,800</span>
-                <span className="text-gray-500 dark:text-gray-400 ml-2">
+                <span className="text-muted-foreground ml-2">
                   + £25/month hosting
                 </span>
               </div>
-            </div>
+            </CardHeader>
 
-            <div className="space-y-4 mb-8">
-              <div className="flex items-start">
-                <svg
-                  className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <p>Design and development</p>
+            <CardContent className="space-y-4">
+              <div className="space-y-4">
+                <Feature text="Design and development" included />
+                <Feature text="£25 a month hosting" included />
+                <Feature text="Up to 5 pages included" included />
+                <Feature text="£70 per additional page after page 5" included />
+                <Feature text="7 days a week support" included={false} />
+                <Feature text="Lifetime updates" included={false} />
               </div>
-              <div className="flex items-start">
-                <svg
-                  className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <p>£25 a month hosting</p>
-              </div>
-              <div className="flex items-start">
-                <svg
-                  className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <p>Up to 5 pages included</p>
-              </div>
-              <div className="flex items-start">
-                <svg
-                  className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <p>£70 per additional page after page 5</p>
-              </div>
-              <div className="flex items-start">
-                <svg
-                  className="w-5 h-5 text-red-500 mr-2 mt-1 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  ></path>
-                </svg>
-                <p>7 days a week support</p>
-              </div>
-              <div className="flex items-start">
-                <svg
-                  className="w-5 h-5 text-red-500 mr-2 mt-1 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  ></path>
-                </svg>
-                <p>Lifetime updates</p>
-              </div>
-            </div>
+            </CardContent>
 
-            <div className="text-center">
-              <a href="#contact" className="btn btn-primary inline-block">
-                Get Started
-              </a>
-            </div>
-          </div>
+            <CardFooter className="flex justify-center">
+              <Button asChild size="lg" className="w-full max-w-xs">
+                <a href="#contact">Get Started</a>
+              </Button>
+            </CardFooter>
+          </Card>
 
           {/* Monthly Subscription */}
-          <div className="card border-t-4 border-indigo-600 hover:shadow-lg transition-shadow relative overflow-hidden">
-            <div className="absolute -right-10 top-6 bg-indigo-600 text-white px-10 py-1 rotate-45 transform">
+          <Card className="relative overflow-hidden border-t-4 border-primary">
+            <Badge
+              className="absolute -right-10 top-6 px-10 py-1 rotate-45 transform bg-primary"
+              variant="secondary"
+            >
               Popular
-            </div>
-            <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold mb-2">Monthly Subscription</h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                Minimum 6 months.
-              </p>
+            </Badge>
+
+            <CardHeader className="text-center space-y-2">
+              <h3 className="text-2xl font-bold">Monthly Subscription</h3>
+              <p className="text-muted-foreground">Minimum 6 months.</p>
               <div className="mt-4">
                 <span className="text-4xl font-bold">£140</span>
-                <span className="text-gray-500 dark:text-gray-400 ml-2">
-                  /month
-                </span>
+                <span className="text-muted-foreground ml-2">/month</span>
               </div>
-            </div>
+            </CardHeader>
 
-            <div className="space-y-4 mb-8">
-              <div className="flex items-start">
-                <svg
-                  className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <p>Design and development</p>
+            <CardContent className="space-y-4">
+              <div className="space-y-4">
+                <Feature text="Design and development" included />
+                <Feature text="Hosting included" included />
+                <Feature text="Up to 5 pages included" included />
+                <Feature text="£70 per additional page after page 5" included />
+                <Feature text="7 days a week support" included />
+                <Feature text="Lifetime updates" included />
               </div>
-              <div className="flex items-start">
-                <svg
-                  className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <p>Hosting included</p>
-              </div>
-              <div className="flex items-start">
-                <svg
-                  className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <p>Up to 5 pages included</p>
-              </div>
-              <div className="flex items-start">
-                <svg
-                  className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <p>£70 per additional page after page 5</p>
-              </div>
-              <div className="flex items-start">
-                <svg
-                  className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <p>7 days a week support</p>
-              </div>
-              <div className="flex items-start">
-                <svg
-                  className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <p>Lifetime updates included</p>
-              </div>
-            </div>
+            </CardContent>
 
-            <div className="text-center">
-              <a
-                href="#contact"
-                className="btn bg-indigo-600 text-white hover:bg-indigo-700 inline-block"
+            <CardFooter className="flex justify-center">
+              <Button
+                asChild
+                size="lg"
+                variant="default"
+                className="w-full max-w-xs"
               >
-                Get Started
-              </a>
-            </div>
-          </div>
+                <a href="#contact">Get Started</a>
+              </Button>
+            </CardFooter>
+          </Card>
         </div>
 
         {/* Portfolio Section */}
         <div className="mt-24">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Recent Projects</h2>
-            <div className="h-1 w-20 bg-blue-600 mx-auto mb-6"></div>
-            <p className="text-lg max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4 text-foreground">
+              Recent Projects
+            </h2>
+            <Separator className="w-20 mx-auto mb-6 bg-primary" />
+            <p className="text-lg max-w-3xl mx-auto text-muted-foreground">
               Check out what I've worked on in the past
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Project 1 */}
-            <div className="group overflow-hidden rounded-lg shadow-lg bg-gray-100 dark:bg-gray-700">
-              <div className="relative h-64 w-full">
+            <Card className="group overflow-hidden">
+              <div className="relative aspect-video overflow-hidden">
                 <Image
                   src="/images/ecommerce.jpg"
                   alt="E-commerce Website"
@@ -298,28 +128,24 @@ export default function Services() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">E-commerce Platform</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
+              <CardHeader>
+                <h3 className="text-xl font-bold">E-commerce Platform</h3>
+                <p className="text-muted-foreground">
                   A fully responsive online store with secure payment processing
                 </p>
+              </CardHeader>
+              <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full dark:bg-blue-900 dark:text-blue-100">
-                    React
-                  </span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full dark:bg-blue-900 dark:text-blue-100">
-                    Next.js
-                  </span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full dark:bg-blue-900 dark:text-blue-100">
-                    Stripe
-                  </span>
+                  <Badge variant="secondary">React</Badge>
+                  <Badge variant="secondary">Next.js</Badge>
+                  <Badge variant="secondary">Stripe</Badge>
                 </div>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
 
             {/* Project 2 */}
-            <div className="group overflow-hidden rounded-lg shadow-lg bg-gray-100 dark:bg-gray-700">
-              <div className="relative h-64 w-full">
+            <Card className="group overflow-hidden">
+              <div className="relative aspect-video overflow-hidden">
                 <Image
                   src="/images/restaurant.jpg"
                   alt="Restaurant Website"
@@ -328,28 +154,24 @@ export default function Services() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Restaurant Website</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
+              <CardHeader>
+                <h3 className="text-xl font-bold">Restaurant Website</h3>
+                <p className="text-muted-foreground">
                   An elegant website with online reservation system
                 </p>
+              </CardHeader>
+              <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full dark:bg-blue-900 dark:text-blue-100">
-                    JavaScript
-                  </span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full dark:bg-blue-900 dark:text-blue-100">
-                    Tailwind CSS
-                  </span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full dark:bg-blue-900 dark:text-blue-100">
-                    API Integration
-                  </span>
+                  <Badge variant="secondary">JavaScript</Badge>
+                  <Badge variant="secondary">Tailwind CSS</Badge>
+                  <Badge variant="secondary">API Integration</Badge>
                 </div>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
 
             {/* Project 3 */}
-            <div className="group overflow-hidden rounded-lg shadow-lg bg-gray-100 dark:bg-gray-700">
-              <div className="relative h-64 w-full">
+            <Card className="group overflow-hidden">
+              <div className="relative aspect-video overflow-hidden">
                 <Image
                   src="/images/analytics.jpg"
                   alt="Analytics Dashboard"
@@ -358,27 +180,36 @@ export default function Services() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Analytics Dashboard</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
+              <CardHeader>
+                <h3 className="text-xl font-bold">Analytics Dashboard</h3>
+                <p className="text-muted-foreground">
                   A comprehensive data visualization platform
                 </p>
+              </CardHeader>
+              <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full dark:bg-blue-900 dark:text-blue-100">
-                    React
-                  </span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full dark:bg-blue-900 dark:text-blue-100">
-                    D3.js
-                  </span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full dark:bg-blue-900 dark:text-blue-100">
-                    Firebase
-                  </span>
+                  <Badge variant="secondary">React</Badge>
+                  <Badge variant="secondary">D3.js</Badge>
+                  <Badge variant="secondary">Firebase</Badge>
                 </div>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
     </section>
+  );
+}
+
+function Feature({ text, included }) {
+  return (
+    <div className="flex items-start">
+      {included ? (
+        <CheckIcon className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" />
+      ) : (
+        <XIcon className="w-5 h-5 text-destructive mr-2 mt-1 flex-shrink-0" />
+      )}
+      <p className="text-muted-foreground">{text}</p>
+    </div>
   );
 }

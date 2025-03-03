@@ -52,14 +52,13 @@ export default function About() {
 
           <HoverCard>
             <HoverCardTrigger asChild>
-              <Card className="relative h-96 overflow-hidden border-none bg-transparent shadow-xl">
-                <div className="relative h-full w-full flex items-center justify-center">
+              <Card className="relative overflow-hidden border-none bg-transparent shadow-xl">
+                <div className="relative w-full aspect-square">
                   <Image
                     src="/images/developer.png"
                     alt="Web Developer at work"
-                    width={500}
-                    height={500}
-                    className="max-h-full max-w-full object-contain transition-all duration-300"
+                    fill
+                    className="object-contain"
                     sizes="(max-width: 768px) 100vw, 50vw"
                     priority
                   />

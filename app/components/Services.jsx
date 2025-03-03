@@ -65,8 +65,8 @@ export default function Services() {
           {/* Monthly Subscription */}
           <Card className="relative overflow-hidden border-t-4 border-primary">
             <Badge
-              className="absolute -right-10 top-6 px-10 py-1 rotate-45 transform bg-primary"
-              variant="secondary"
+              className="absolute -right-10 top-6 px-10 py-1 rotate-45 transform bg-foreground text-background font-semibold"
+              variant="default"
             >
               Popular
             </Badge>

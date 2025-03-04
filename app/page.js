@@ -17,7 +17,7 @@ export default function Home() {
         <Services />
         {/* <Portfolio /> */}
       </div>
-      <div className="h-screen" />
+      {/* <div className="h-screen" /> */}
       <Contact />
     </main>
   );

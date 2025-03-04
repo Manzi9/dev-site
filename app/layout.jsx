@@ -58,27 +58,6 @@ export default function RootLayout({ children }) {
             <div className="flex flex-col items-center space-y-6">
               {/* Contact Icons */}
               <div className="flex flex-wrap justify-center gap-8 md:gap-12">
-                {/* Availability */}
-                <div className="flex flex-col items-center transform transition-transform hover:scale-110">
-                  <div className="w-10 h-10 flex items-center justify-center rounded-full bg-blue-900/30 text-blue-400 mb-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <p className="text-gray-400">24/7</p>
-                </div>
-
                 {/* Email */}
                 <div className="flex flex-col items-center transform transition-transform hover:scale-110">
                   <a

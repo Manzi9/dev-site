@@ -3,17 +3,22 @@ import About from "./components/About";
 import WhyChoose from "./components/WhyChoose";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import Portfolio from "./components/Portfolio";
 import ScrollToSection from "./components/ScrollToSection";
 
 export default function Home() {
   return (
-    <>
-      <ScrollToSection />
-      <Hero />
-      <About />
-      <WhyChoose />
-      <Services />
+    <main>
+      <div className="relative z-20">
+        <ScrollToSection />
+        <Hero />
+        <About />
+        <WhyChoose />
+        <Services />
+        {/* <Portfolio /> */}
+      </div>
+      <div className="h-screen" />
       <Contact />
-    </>
+    </main>
   );
 }

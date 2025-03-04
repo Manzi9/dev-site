@@ -11,7 +11,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { CheckIcon, XIcon } from "lucide-react";
-import Image from "next/image";
 
 export default function Services() {
   return (
@@ -102,99 +101,6 @@ export default function Services() {
               </Button>
             </CardFooter>
           </Card>
-        </div>
-
-        {/* Portfolio Section */}
-        <div className="mt-24">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-foreground">
-              Recent Projects
-            </h2>
-            <Separator className="w-20 mx-auto mb-6 bg-primary" />
-            <p className="text-lg max-w-3xl mx-auto text-muted-foreground">
-              Check out what I've worked on in the past
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Project 1 */}
-            <Card className="group overflow-hidden">
-              <div className="relative aspect-video overflow-hidden">
-                <Image
-                  src="/images/ecommerce.jpg"
-                  alt="E-commerce Website"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-              <CardHeader>
-                <h3 className="text-xl font-bold">E-commerce Platform</h3>
-                <p className="text-muted-foreground">
-                  A fully responsive online store with secure payment processing
-                </p>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">React</Badge>
-                  <Badge variant="secondary">Next.js</Badge>
-                  <Badge variant="secondary">Stripe</Badge>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Project 2 */}
-            <Card className="group overflow-hidden">
-              <div className="relative aspect-video overflow-hidden">
-                <Image
-                  src="/images/restaurant.jpg"
-                  alt="Restaurant Website"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-              <CardHeader>
-                <h3 className="text-xl font-bold">Restaurant Website</h3>
-                <p className="text-muted-foreground">
-                  An elegant website with online reservation system
-                </p>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">JavaScript</Badge>
-                  <Badge variant="secondary">Tailwind CSS</Badge>
-                  <Badge variant="secondary">API Integration</Badge>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Project 3 */}
-            <Card className="group overflow-hidden">
-              <div className="relative aspect-video overflow-hidden">
-                <Image
-                  src="/images/analytics.jpg"
-                  alt="Analytics Dashboard"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-              <CardHeader>
-                <h3 className="text-xl font-bold">Analytics Dashboard</h3>
-                <p className="text-muted-foreground">
-                  A comprehensive data visualization platform
-                </p>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">React</Badge>
-                  <Badge variant="secondary">D3.js</Badge>
-                  <Badge variant="secondary">Firebase</Badge>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </div>
     </section>

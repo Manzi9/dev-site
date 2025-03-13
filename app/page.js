@@ -16,9 +16,8 @@ export default function Home() {
         <WhyChoose />
         <Services />
         {/* <Portfolio /> */}
+        <Contact />
       </div>
-      {/* <div className="h-screen" /> */}
-      <Contact />
     </main>
   );
 }

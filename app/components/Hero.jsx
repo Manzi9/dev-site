@@ -42,10 +42,10 @@ export default function Hero() {
       <Card className="container mx-auto px-6 py-20 relative z-10 bg-transparent border-none shadow-none">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground leading-tight">
+            Turning Clicks into{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
-              Business
-            </span>{" "}
-            Web Development Solutions
+              Sales
+            </span>
           </h1>
 
           <p className="text-xl md:text-2xl mb-10 text-muted-foreground max-w-3xl mx-auto leading-relaxed">

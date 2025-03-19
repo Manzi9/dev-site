@@ -36,7 +36,7 @@ export default function About() {
               cost of a new website to be a big barrier in cementing their
               online presence. I'm here to change that. With £0 down monthly
               packages to ensure that a sleek, functional responsive website is
-              accessible to whoever needs one.
+              accessible to those who need one.
             </p>
 
             <div className="pt-4">

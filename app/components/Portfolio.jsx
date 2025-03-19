@@ -24,7 +24,7 @@ export default function Portfolio() {
         <Card className="group overflow-hidden">
           <div className="relative aspect-video overflow-hidden">
             <Image
-              src="/images/ecommerce.jpg"
+              src="/images/dyari-mockup.png"
               alt="E-commerce Website"
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -32,16 +32,16 @@ export default function Portfolio() {
             />
           </div>
           <CardHeader>
-            <h3 className="text-xl font-bold">E-commerce Platform</h3>
+            <h3 className="text-xl font-bold">Barber Shop Website</h3>
             <p className="text-muted-foreground">
-              A fully responsive online store with secure payment processing
+              A barber shop website with a clean and modern design
             </p>
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap gap-2">
-              <Badge variant="secondary">React</Badge>
+              {/* <Badge variant="secondary">React</Badge>
               <Badge variant="secondary">Next.js</Badge>
-              <Badge variant="secondary">Stripe</Badge>
+              <Badge variant="secondary">Stripe</Badge> */}
             </div>
           </CardContent>
         </Card>
@@ -50,7 +50,7 @@ export default function Portfolio() {
         <Card className="group overflow-hidden">
           <div className="relative aspect-video overflow-hidden">
             <Image
-              src="/images/restaurant.jpg"
+              src="/images/coffee-mockup.png"
               alt="Restaurant Website"
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -58,16 +58,16 @@ export default function Portfolio() {
             />
           </div>
           <CardHeader>
-            <h3 className="text-xl font-bold">Restaurant Website</h3>
+            <h3 className="text-xl font-bold">Artisan Cafe Website</h3>
             <p className="text-muted-foreground">
-              An elegant website with online reservation system
+              A responsive cafe website a coffee menu in-built.
             </p>
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap gap-2">
-              <Badge variant="secondary">JavaScript</Badge>
+              {/* <Badge variant="secondary">JavaScript</Badge>
               <Badge variant="secondary">Tailwind CSS</Badge>
-              <Badge variant="secondary">API Integration</Badge>
+              <Badge variant="secondary">API Integration</Badge> */}
             </div>
           </CardContent>
         </Card>
@@ -91,9 +91,9 @@ export default function Portfolio() {
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap gap-2">
-              <Badge variant="secondary">React</Badge>
+              {/* <Badge variant="secondary">React</Badge>
               <Badge variant="secondary">D3.js</Badge>
-              <Badge variant="secondary">Firebase</Badge>
+              <Badge variant="secondary">Firebase</Badge> */}
             </div>
           </CardContent>
         </Card>

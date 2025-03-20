@@ -5,6 +5,7 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import ScrollToSection from "./components/ScrollToSection";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Services />
         <Portfolio />
         <Contact />
+        <Analytics />
       </div>
     </main>
   );

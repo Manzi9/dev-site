@@ -36,7 +36,7 @@ export default function Services() {
                 One-time payment for your website
               </p>
               <div className="mt-4">
-                <span className="text-4xl font-bold">£1,800</span>
+                <span className="text-4xl font-bold">£2,800</span>
                 <span className="text-muted-foreground ml-2">
                   + £25/month hosting
                 </span>

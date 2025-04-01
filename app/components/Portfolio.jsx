@@ -8,7 +8,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Portfolio() {
   return (
-    <div className="mt-24">
+    <div className="mt-24 p-10">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4 text-foreground">
           Recent Projects
@@ -32,7 +32,7 @@ export default function Portfolio() {
             />
           </div>
           <CardHeader>
-            <h3 className="text-xl font-bold">Barber Shop Website</h3>
+            <h3 className="text-xl font-bold">Barber Shop</h3>
             <p className="text-muted-foreground">
               A barber shop website with a clean and modern design
             </p>

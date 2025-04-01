@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -8,6 +8,41 @@ import { Separator } from "@/components/ui/separator";
 import { ArrowRight } from "lucide-react";
 
 export default function Contact() {
+  const [status, setStatus] = useState({
+    loading: false,
+    success: false,
+    error: false,
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus({ loading: true, success: false, error: false });
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus({ loading: false, success: true, error: false });
+        form.reset();
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
+      setStatus({ loading: false, success: false, error: true });
+    }
+  };
+
   return (
     <section
       id="contact"
@@ -37,7 +72,23 @@ export default function Contact() {
         </div>
 
         <div className="max-w-3xl mx-auto">
-          <form className="space-y-8">
+          <form onSubmit={handleSubmit} className="space-y-8">
+            <input
+              type="hidden"
+              name="access_key"
+              value="85945fd0-3dfb-4518-ba3c-9b9045145fd6"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="New Contact Form Submission"
+            />
+            <input
+              type="hidden"
+              name="from_name"
+              value="Portfolio Contact Form"
+            />
+
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label
@@ -46,7 +97,13 @@ export default function Contact() {
                 >
                   Name
                 </label>
-                <Input type="text" id="name" placeholder="Your name" required />
+                <Input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
               </div>
               <div className="space-y-2">
                 <label
@@ -58,6 +115,7 @@ export default function Contact() {
                 <Input
                   type="email"
                   id="email"
+                  name="email"
                   placeholder="Your email"
                   required
                 />
@@ -71,7 +129,13 @@ export default function Contact() {
               >
                 Subject
               </label>
-              <Input type="text" id="subject" placeholder="Subject" required />
+              <Input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
             </div>
 
             <div className="space-y-2">
@@ -83,6 +147,7 @@ export default function Contact() {
               </label>
               <Textarea
                 id="message"
+                name="message"
                 rows="5"
                 placeholder="Your message"
                 required
@@ -94,13 +159,26 @@ export default function Contact() {
                 type="submit"
                 size="lg"
                 className="transform transition-all duration-300 hover:scale-105"
+                disabled={status.loading}
               >
                 <span className="flex items-center">
-                  Send Message
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  {status.loading ? "Sending..." : "Send Message"}
+                  {!status.loading && <ArrowRight className="ml-2 h-5 w-5" />}
                 </span>
               </Button>
             </div>
+
+            {status.success && (
+              <p className="text-green-500 text-center">
+                Thank you for your message! I'll get back to you soon.
+              </p>
+            )}
+            {status.error && (
+              <p className="text-red-500 text-center">
+                Sorry, there was an error sending your message. Please try
+                again.
+              </p>
+            )}
           </form>
         </div>
       </div>

@@ -28,7 +28,7 @@ export default function Services() {
           </p>
         </div>
 
-        <Tabs defaultValue="account">
+        <Tabs defaultValue="monthly">
           <TabsList className="w-full max-w-md mx-auto mb-8 h-14 bg-muted/50">
             <TabsTrigger
               value="monthly"
@@ -57,19 +57,18 @@ export default function Services() {
               {/* Starter Monthly Subscription */}
               <Card className="relative overflow-hidden border-t-4 border-primary">
                 <CardHeader className="text-center space-y-2">
-                  <h3 className="text-2xl font-bold">Starter Monthly</h3>
-                  <p className="text-muted-foreground">Minimum 6 months.</p>
+                  <h3 className="text-2xl font-bold">Starter</h3>
                   <div className="mt-4">
                     <span className="text-4xl font-bold">£50</span>
                     <span className="text-muted-foreground ml-2">/month</span>
                   </div>
                 </CardHeader>
 
-                <CardContent className="space-y-4">
+                <CardContent className="space-y-4 h-[280px]">
                   <div className="space-y-4">
                     <Feature text="Design and development" included />
                     <Feature text="Hosting included" included />
-                    <Feature text="Up to 3 pages included" included />
+                    <Feature text="Single page site" included />
                     <Feature
                       text="£70 per additional page after page 3"
                       included
@@ -94,15 +93,14 @@ export default function Services() {
               {/* Professional Monthly Subscription */}
               <Card className="relative overflow-hidden border-t-4 border-primary">
                 <CardHeader className="text-center space-y-2">
-                  <h3 className="text-2xl font-bold">Professional Monthly</h3>
-                  <p className="text-muted-foreground">Minimum 6 months.</p>
+                  <h3 className="text-2xl font-bold">Professional</h3>
                   <div className="mt-4">
                     <span className="text-4xl font-bold">£140</span>
                     <span className="text-muted-foreground ml-2">/month</span>
                   </div>
                 </CardHeader>
 
-                <CardContent className="space-y-4">
+                <CardContent className="space-y-4 h-[280px]">
                   <div className="space-y-4">
                     <Feature text="Design and development" included />
                     <Feature text="Hosting included" included />
@@ -131,15 +129,13 @@ export default function Services() {
               {/* Ecommerce Monthly Subscription */}
               <Card className="relative overflow-hidden border-t-4 border-primary">
                 <CardHeader className="text-center space-y-2">
-                  <h3 className="text-2xl font-bold">Ecommerce Monthly</h3>
-                  <p className="text-muted-foreground">Minimum 6 months.</p>
+                  <h3 className="text-2xl font-bold">E-Commerce</h3>
                   <div className="mt-4">
-                    <span className="text-4xl font-bold">£190</span>
-                    <span className="text-muted-foreground ml-2">/month</span>
+                    <span className="text-4xl font-bold">Please enquire</span>
                   </div>
                 </CardHeader>
 
-                <CardContent className="space-y-4">
+                <CardContent className="space-y-4 h-[280px]">
                   <div className="space-y-4">
                     <Feature text="Design and development" included />
                     <Feature text="Hosting included" included />
@@ -176,10 +172,7 @@ export default function Services() {
               {/* Starter Lump Sum Package */}
               <Card className="relative overflow-hidden border-t-4 border-primary">
                 <CardHeader className="text-center space-y-2">
-                  <h3 className="text-2xl font-bold">Starter Lump Sum</h3>
-                  <p className="text-muted-foreground">
-                    One-time payment for your website
-                  </p>
+                  <h3 className="text-2xl font-bold">Starter</h3>
                   <div className="mt-4">
                     <span className="text-4xl font-bold">£950</span>
                     <span className="text-muted-foreground ml-2">
@@ -188,11 +181,11 @@ export default function Services() {
                   </div>
                 </CardHeader>
 
-                <CardContent className="space-y-4">
+                <CardContent className="space-y-4 h-[280px]">
                   <div className="space-y-4">
                     <Feature text="Design and development" included />
                     <Feature text="£25 a month hosting" included />
-                    <Feature text="Up to 3 pages included" included />
+                    <Feature text="Single page site" included />
                     <Feature
                       text="£70 per additional page after page 3"
                       included
@@ -212,19 +205,16 @@ export default function Services() {
               {/* Professional Lump Sum Package */}
               <Card className="relative overflow-hidden border-t-4 border-primary">
                 <CardHeader className="text-center space-y-2">
-                  <h3 className="text-2xl font-bold">Professional Lump Sum</h3>
-                  <p className="text-muted-foreground">
-                    One-time payment for your website
-                  </p>
+                  <h3 className="text-2xl font-bold">Professional</h3>
                   <div className="mt-4">
-                    <span className="text-4xl font-bold">£2,800</span>
+                    <span className="text-4xl font-bold">£2,400</span>
                     <span className="text-muted-foreground ml-2">
                       + £25/month hosting
                     </span>
                   </div>
                 </CardHeader>
 
-                <CardContent className="space-y-4">
+                <CardContent className="space-y-4 h-[280px]">
                   <div className="space-y-4">
                     <Feature text="Design and development" included />
                     <Feature text="£25 a month hosting" included />
@@ -248,19 +238,13 @@ export default function Services() {
               {/* Ecommerce Lump Sum Package */}
               <Card className="relative overflow-hidden border-t-4 border-primary">
                 <CardHeader className="text-center space-y-2">
-                  <h3 className="text-2xl font-bold">Ecommerce Lump Sum</h3>
-                  <p className="text-muted-foreground">
-                    One-time payment for your website
-                  </p>
+                  <h3 className="text-2xl font-bold">E-Commerce</h3>
                   <div className="mt-4">
-                    <span className="text-4xl font-bold">£3,000</span>
-                    <span className="text-muted-foreground ml-2">
-                      + £25/month hosting
-                    </span>
+                    <span className="text-4xl font-bold">Please enquire</span>
                   </div>
                 </CardHeader>
 
-                <CardContent className="space-y-4">
+                <CardContent className="space-y-4 h-[280px]">
                   <div className="space-y-4">
                     <Feature text="Design and development" included />
                     <Feature text="£25 a month hosting" included />

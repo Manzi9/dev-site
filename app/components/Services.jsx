@@ -32,28 +32,30 @@ export default function Services() {
           <TabsList className="w-full max-w-md mx-auto mb-8 h-14 bg-muted/50">
             <TabsTrigger
               value="monthly"
-              className="flex-1 text-lg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+              className="flex-1 text-lg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground relative transition-all duration-300 ease-in-out"
             >
               Monthly
+              <Badge
+                className="absolute -right-2 -top-2 px-2 py-0.5 text-xs bg-foreground text-background font-semibold"
+                variant="default"
+              >
+                Popular
+              </Badge>
             </TabsTrigger>
             <TabsTrigger
               value="lumpsum"
-              className="flex-1 text-lg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+              className="flex-1 text-lg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground transition-all duration-300 ease-in-out"
             >
               Lump Sum
             </TabsTrigger>
           </TabsList>
-          <TabsContent value="monthly">
-            <div className="grid md:grid-cols-2 gap-8 mt-12">
+          <TabsContent
+            value="monthly"
+            className="transition-all duration-500 ease-in-out data-[state=inactive]:opacity-0 data-[state=active]:opacity-100"
+          >
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 animate-in fade-in duration-1000">
               {/* Starter Monthly Subscription */}
               <Card className="relative overflow-hidden border-t-4 border-primary">
-                <Badge
-                  className="absolute -right-10 top-6 px-10 py-1 rotate-45 transform bg-foreground text-background font-semibold"
-                  variant="default"
-                >
-                  Popular
-                </Badge>
-
                 <CardHeader className="text-center space-y-2">
                   <h3 className="text-2xl font-bold">Starter Monthly</h3>
                   <p className="text-muted-foreground">Minimum 6 months.</p>
@@ -91,13 +93,6 @@ export default function Services() {
 
               {/* Professional Monthly Subscription */}
               <Card className="relative overflow-hidden border-t-4 border-primary">
-                <Badge
-                  className="absolute -right-10 top-6 px-10 py-1 rotate-45 transform bg-foreground text-background font-semibold"
-                  variant="default"
-                >
-                  Popular
-                </Badge>
-
                 <CardHeader className="text-center space-y-2">
                   <h3 className="text-2xl font-bold">Professional Monthly</h3>
                   <p className="text-muted-foreground">Minimum 6 months.</p>
@@ -135,13 +130,6 @@ export default function Services() {
 
               {/* Ecommerce Monthly Subscription */}
               <Card className="relative overflow-hidden border-t-4 border-primary">
-                <Badge
-                  className="absolute -right-10 top-6 px-10 py-1 rotate-45 transform bg-foreground text-background font-semibold"
-                  variant="default"
-                >
-                  Popular
-                </Badge>
-
                 <CardHeader className="text-center space-y-2">
                   <h3 className="text-2xl font-bold">Ecommerce Monthly</h3>
                   <p className="text-muted-foreground">Minimum 6 months.</p>
@@ -180,8 +168,11 @@ export default function Services() {
               </Card>
             </div>
           </TabsContent>
-          <TabsContent value="lumpsum">
-            <div className="grid md:grid-cols-2 gap-8 mt-12">
+          <TabsContent
+            value="lumpsum"
+            className="transition-all duration-500 ease-in-out data-[state=inactive]:opacity-0 data-[state=active]:opacity-100"
+          >
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 animate-in fade-in duration-1000">
               {/* Starter Lump Sum Package */}
               <Card className="relative overflow-hidden border-t-4 border-primary">
                 <CardHeader className="text-center space-y-2">

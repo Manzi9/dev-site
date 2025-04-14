@@ -28,10 +28,84 @@ export default function Services() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mt-12">
-          {/* Lump Sum Package */}
+          {/* Starter Lump Sum Package */}
           <Card className="relative overflow-hidden border-t-4 border-primary">
             <CardHeader className="text-center space-y-2">
-              <h3 className="text-2xl font-bold">Lump Sum</h3>
+              <h3 className="text-2xl font-bold">Starter Lump Sum</h3>
+              <p className="text-muted-foreground">
+                One-time payment for your website
+              </p>
+              <div className="mt-4">
+                <span className="text-4xl font-bold">£950</span>
+                <span className="text-muted-foreground ml-2">
+                  + £25/month hosting
+                </span>
+              </div>
+            </CardHeader>
+
+            <CardContent className="space-y-4">
+              <div className="space-y-4">
+                <Feature text="Design and development" included />
+                <Feature text="£25 a month hosting" included />
+                <Feature text="Up to 3 pages included" included />
+                <Feature text="£70 per additional page after page 3" included />
+                <Feature text="7 days a week support" included={false} />
+                <Feature text="Lifetime updates" included={false} />
+              </div>
+            </CardContent>
+
+            <CardFooter className="flex justify-center">
+              <Button asChild size="lg" className="w-full max-w-xs">
+                <a href="#contact">Get Started</a>
+              </Button>
+            </CardFooter>
+          </Card>
+
+          {/* Starter Monthly Subscription */}
+          <Card className="relative overflow-hidden border-t-4 border-primary">
+            <Badge
+              className="absolute -right-10 top-6 px-10 py-1 rotate-45 transform bg-foreground text-background font-semibold"
+              variant="default"
+            >
+              Popular
+            </Badge>
+
+            <CardHeader className="text-center space-y-2">
+              <h3 className="text-2xl font-bold">Starter Monthly</h3>
+              <p className="text-muted-foreground">Minimum 6 months.</p>
+              <div className="mt-4">
+                <span className="text-4xl font-bold">£50</span>
+                <span className="text-muted-foreground ml-2">/month</span>
+              </div>
+            </CardHeader>
+
+            <CardContent className="space-y-4">
+              <div className="space-y-4">
+                <Feature text="Design and development" included />
+                <Feature text="Hosting included" included />
+                <Feature text="Up to 3 pages included" included />
+                <Feature text="£70 per additional page after page 3" included />
+                <Feature text="7 days a week support" included />
+                <Feature text="Lifetime updates" included />
+              </div>
+            </CardContent>
+
+            <CardFooter className="flex justify-center">
+              <Button
+                asChild
+                size="lg"
+                variant="default"
+                className="w-full max-w-xs"
+              >
+                <a href="#contact">Get Started</a>
+              </Button>
+            </CardFooter>
+          </Card>
+
+          {/* Professional Lump Sum Package */}
+          <Card className="relative overflow-hidden border-t-4 border-primary">
+            <CardHeader className="text-center space-y-2">
+              <h3 className="text-2xl font-bold">Professional Lump Sum</h3>
               <p className="text-muted-foreground">
                 One-time payment for your website
               </p>
@@ -61,7 +135,7 @@ export default function Services() {
             </CardFooter>
           </Card>
 
-          {/* Monthly Subscription */}
+          {/* Professional Monthly Subscription */}
           <Card className="relative overflow-hidden border-t-4 border-primary">
             <Badge
               className="absolute -right-10 top-6 px-10 py-1 rotate-45 transform bg-foreground text-background font-semibold"
@@ -71,7 +145,7 @@ export default function Services() {
             </Badge>
 
             <CardHeader className="text-center space-y-2">
-              <h3 className="text-2xl font-bold">Monthly Subscription</h3>
+              <h3 className="text-2xl font-bold">Professional Monthly</h3>
               <p className="text-muted-foreground">Minimum 6 months.</p>
               <div className="mt-4">
                 <span className="text-4xl font-bold">£140</span>
@@ -85,6 +159,84 @@ export default function Services() {
                 <Feature text="Hosting included" included />
                 <Feature text="Up to 5 pages included" included />
                 <Feature text="£70 per additional page after page 5" included />
+                <Feature text="7 days a week support" included />
+                <Feature text="Lifetime updates" included />
+              </div>
+            </CardContent>
+
+            <CardFooter className="flex justify-center">
+              <Button
+                asChild
+                size="lg"
+                variant="default"
+                className="w-full max-w-xs"
+              >
+                <a href="#contact">Get Started</a>
+              </Button>
+            </CardFooter>
+          </Card>
+
+          {/* Ecommerce Lump Sum Package */}
+          <Card className="relative overflow-hidden border-t-4 border-primary">
+            <CardHeader className="text-center space-y-2">
+              <h3 className="text-2xl font-bold">Ecommerce Lump Sum</h3>
+              <p className="text-muted-foreground">
+                One-time payment for your website
+              </p>
+              <div className="mt-4">
+                <span className="text-4xl font-bold">£3,000</span>
+                <span className="text-muted-foreground ml-2">
+                  + £25/month hosting
+                </span>
+              </div>
+            </CardHeader>
+
+            <CardContent className="space-y-4">
+              <div className="space-y-4">
+                <Feature text="Design and development" included />
+                <Feature text="£25 a month hosting" included />
+                <Feature text="Up to 5 pages included" included />
+                <Feature text="£70 per additional page after page 5" included />
+                <Feature text="Ecommerce functionality" included />
+                <Feature text="Payment gateway integration" included />
+                <Feature text="7 days a week support" included={false} />
+                <Feature text="Lifetime updates" included={false} />
+              </div>
+            </CardContent>
+
+            <CardFooter className="flex justify-center">
+              <Button asChild size="lg" className="w-full max-w-xs">
+                <a href="#contact">Get Started</a>
+              </Button>
+            </CardFooter>
+          </Card>
+
+          {/* Ecommerce Monthly Subscription */}
+          <Card className="relative overflow-hidden border-t-4 border-primary">
+            <Badge
+              className="absolute -right-10 top-6 px-10 py-1 rotate-45 transform bg-foreground text-background font-semibold"
+              variant="default"
+            >
+              Popular
+            </Badge>
+
+            <CardHeader className="text-center space-y-2">
+              <h3 className="text-2xl font-bold">Ecommerce Monthly</h3>
+              <p className="text-muted-foreground">Minimum 6 months.</p>
+              <div className="mt-4">
+                <span className="text-4xl font-bold">£190</span>
+                <span className="text-muted-foreground ml-2">/month</span>
+              </div>
+            </CardHeader>
+
+            <CardContent className="space-y-4">
+              <div className="space-y-4">
+                <Feature text="Design and development" included />
+                <Feature text="Hosting included" included />
+                <Feature text="Up to 5 pages included" included />
+                <Feature text="£70 per additional page after page 5" included />
+                <Feature text="Ecommerce functionality" included />
+                <Feature text="Payment gateway integration" included />
                 <Feature text="7 days a week support" included />
                 <Feature text="Lifetime updates" included />
               </div>

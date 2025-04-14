@@ -22,19 +22,19 @@ export default function Portfolio() {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Project 1 */}
         <Card className="group overflow-hidden">
-          <div className="relative aspect-video overflow-hidden">
+          <div className="relative h-[300px] overflow-hidden">
             <Image
               src="/images/dyari-mockup.png"
-              alt="E-commerce Website"
+              alt="Barber Shop Website"
               fill
-              className="object-cover transition-transform duration-500 group-hover:scale-110"
+              className="object-contain transition-transform duration-500 group-hover:scale-110"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
           <CardHeader>
             <h3 className="text-xl font-bold">Barber Shop</h3>
             <p className="text-muted-foreground">
-              A barber shop website with a clean and modern design
+              A barber shop website built on our starter tier.
             </p>
           </CardHeader>
           <CardContent>
@@ -48,19 +48,19 @@ export default function Portfolio() {
 
         {/* Project 2 */}
         <Card className="group overflow-hidden">
-          <div className="relative aspect-video overflow-hidden">
+          <div className="relative h-[300px] overflow-hidden">
             <Image
-              src="/images/coffee-mockup.png"
-              alt="Restaurant Website"
+              src="/images/cafe-mockup.png"
+              alt="Cafe Website"
               fill
-              className="object-cover transition-transform duration-500 group-hover:scale-110"
+              className="object-contain transition-transform duration-500 group-hover:scale-110"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
           <CardHeader>
             <h3 className="text-xl font-bold">Artisan Cafe Website</h3>
             <p className="text-muted-foreground">
-              A responsive cafe website a coffee menu in-built.
+              A website for an Artisan Cafe built on our Professional tier.
             </p>
           </CardHeader>
           <CardContent>
@@ -74,19 +74,19 @@ export default function Portfolio() {
 
         {/* Project 3 */}
         <Card className="group overflow-hidden">
-          <div className="relative aspect-video overflow-hidden">
+          <div className="relative h-[300px] overflow-hidden">
             <Image
-              src="/images/analytics.jpg"
+              src="/images/decor-mockup.png"
               alt="Analytics Dashboard"
               fill
-              className="object-cover transition-transform duration-500 group-hover:scale-110"
+              className="object-contain transition-transform duration-500 group-hover:scale-110"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
           <CardHeader>
-            <h3 className="text-xl font-bold">Analytics Dashboard</h3>
+            <h3 className="text-xl font-bold">Home Decor</h3>
             <p className="text-muted-foreground">
-              A comprehensive data visualization platform
+              A home decorating site built on our Professional tier.
             </p>
           </CardHeader>
           <CardContent>

@@ -29,11 +29,17 @@ export default function Services() {
         </div>
 
         <Tabs defaultValue="account">
-          <TabsList className="w-full max-w-md mx-auto mb-8">
-            <TabsTrigger value="monthly" className="flex-1 text-lg py-3">
+          <TabsList className="w-full max-w-md mx-auto mb-8 h-14 bg-muted/50">
+            <TabsTrigger
+              value="monthly"
+              className="flex-1 text-lg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+            >
               Monthly
             </TabsTrigger>
-            <TabsTrigger value="lumpsum" className="flex-1 text-lg py-3">
+            <TabsTrigger
+              value="lumpsum"
+              className="flex-1 text-lg data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+            >
               Lump Sum
             </TabsTrigger>
           </TabsList>

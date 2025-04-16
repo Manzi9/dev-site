@@ -176,7 +176,7 @@ export default function Services() {
                   <div className="mt-4">
                     <span className="text-4xl font-bold">£950</span>
                     <span className="text-muted-foreground ml-2">
-                      + £25/month hosting
+                      + £12/month hosting
                     </span>
                   </div>
                 </CardHeader>
@@ -209,7 +209,7 @@ export default function Services() {
                   <div className="mt-4">
                     <span className="text-4xl font-bold">£2,400</span>
                     <span className="text-muted-foreground ml-2">
-                      + £25/month hosting
+                      + £12/month hosting
                     </span>
                   </div>
                 </CardHeader>

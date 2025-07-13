@@ -68,11 +68,11 @@ function ProjectCard({ project }) {
             src={project.image}
             alt={project.alt}
             fill
-            className="object-contain transition-transform duration-500 group-hover:scale-110"
+            className="object-cover transition-transform duration-500 group-hover:scale-110"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
-        <CardHeader>
+        <CardHeader className="pt-6">
           <h3 className="text-xl font-bold">{project.title}</h3>
           <p className="text-muted-foreground">{project.subtitle}</p>
         </CardHeader>

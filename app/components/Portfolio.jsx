@@ -10,51 +10,80 @@ import { Separator } from "@/components/ui/separator";
 const projects = [
   {
     id: 1,
-    image: "/images/dyari-mockup.png",
+    image: "/images/dyari-screenshot.png",
     alt: "Barber Shop Website",
     title: "Barber Shop",
     subtitle: "A barber shop website built on the starter tier. ",
+    url: "https://dyaribarbershop.com",
   },
   {
     id: 2,
-    image: "/images/cafe-mockup.png",
+    image: "/images/hilltop-screenshot.png",
     alt: "Cafe Website",
     title: "Artisan Cafe Website",
     subtitle: "A website for an Artisan Cafe built on the Professional tier.",
+    url: "https://hilltop-five.vercel.app/",
   },
   {
     id: 3,
-    image: "/images/decor-mockup.png",
+    image: "/images/idecor8-screenshot.png",
     alt: "Home Decor Website",
     title: "Home Decor",
-    subtitle: "A home decorating site built on the Professional tier.",
+    subtitle:
+      "A home decorating demonstration site built on the Professional tier.",
+    url: "https://idecor8.netlify.app/",
+  },
+  {
+    id: 4,
+    image: "/images/sweetthings-screenshot.png",
+    alt: "Sweet shop website",
+    title: "Confectionary Store",
+    subtitle:
+      "E-Commerce set for a confectiory store, made on the ecommerce tier.",
+    url: "https://sweetthingsuk.com/",
+  },
+  {
+    id: 5,
+    image: "/images/doedog-screenshot.png",
+    alt: "Clothes shop website",
+    title: "High end clothing store",
+    subtitle:
+      "E-Commerce set up for a clothes store, made on the ecommerce tier.",
+    url: "https://doeanddog.com/",
   },
 ];
 
 // Project Card Component
 function ProjectCard({ project }) {
   return (
-    <Card className="group overflow-hidden">
-      <div className="relative h-[300px] overflow-hidden">
-        <Image
-          src={project.image}
-          alt={project.alt}
-          fill
-          className="object-contain transition-transform duration-500 group-hover:scale-110"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
-      </div>
-      <CardHeader>
-        <h3 className="text-xl font-bold">{project.title}</h3>
-        <p className="text-muted-foreground">{project.subtitle}</p>
-      </CardHeader>
-      <CardContent>
-        <div className="flex flex-wrap gap-2">
-          {/* <Badge variant="secondary">React</Badge>
-          <Badge variant="secondary">Next.js</Badge>
-          <Badge variant="secondary">Stripe</Badge> */}
+    <Card className="group overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg">
+      <a
+        href={project.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        <div className="relative h-[300px] overflow-hidden">
+          <Image
+            src={project.image}
+            alt={project.alt}
+            fill
+            className="object-contain transition-transform duration-500 group-hover:scale-110"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
         </div>
-      </CardContent>
+        <CardHeader>
+          <h3 className="text-xl font-bold">{project.title}</h3>
+          <p className="text-muted-foreground">{project.subtitle}</p>
+        </CardHeader>
+        <CardContent>
+          <div className="flex flex-wrap gap-2">
+            {/* <Badge variant="secondary">React</Badge>
+            <Badge variant="secondary">Next.js</Badge>
+            <Badge variant="secondary">Stripe</Badge> */}
+          </div>
+        </CardContent>
+      </a>
     </Card>
   );
 }

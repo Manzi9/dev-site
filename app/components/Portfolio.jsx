@@ -18,12 +18,14 @@ const projects = [
   },
   {
     id: 2,
-    image: "/images/hilltop-screenshot.png",
-    alt: "Cafe Website",
-    title: "Artisan Cafe Website",
-    subtitle: "A website for an Artisan Cafe built on the Professional tier.",
-    url: "https://hilltop-five.vercel.app/",
+    image: "/images/doedog-screenshot.png",
+    alt: "Clothes Shop Website",
+    title: "High End Clothing Store",
+    subtitle:
+      "E-Commerce set up for a clothes store, made on the ecommerce tier.",
+    url: "https://doeanddog.com/",
   },
+
   {
     id: 3,
     image: "/images/idecor8-screenshot.png",
@@ -36,7 +38,7 @@ const projects = [
   {
     id: 4,
     image: "/images/sweetthings-screenshot.png",
-    alt: "Sweet shop website",
+    alt: "Sweet Shop Website",
     title: "Confectionary Store",
     subtitle:
       "E-Commerce set for a confectiory store, made on the ecommerce tier.",
@@ -44,12 +46,11 @@ const projects = [
   },
   {
     id: 5,
-    image: "/images/doedog-screenshot.png",
-    alt: "Clothes shop website",
-    title: "High end clothing store",
-    subtitle:
-      "E-Commerce set up for a clothes store, made on the ecommerce tier.",
-    url: "https://doeanddog.com/",
+    image: "/images/hilltop-screenshot.png",
+    alt: "Cafe Website",
+    title: "Artisan Cafe Website",
+    subtitle: "A website for an Artisan Cafe built on the Professional tier.",
+    url: "https://hilltop-five.vercel.app/",
   },
 ];
 

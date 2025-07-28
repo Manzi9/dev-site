@@ -184,7 +184,7 @@ export default function Services() {
                 <CardContent className="space-y-4 h-[280px]">
                   <div className="space-y-4">
                     <Feature text="Design and development" included />
-                    <Feature text="£25 a month hosting" included />
+                    <Feature text="£12 a month hosting" included />
                     <Feature text="Single page site" included />
                     <Feature
                       text="£70 per additional page after page 3"
@@ -217,7 +217,7 @@ export default function Services() {
                 <CardContent className="space-y-4 h-[280px]">
                   <div className="space-y-4">
                     <Feature text="Design and development" included />
-                    <Feature text="£25 a month hosting" included />
+                    <Feature text="£12 a month hosting" included />
                     <Feature text="Up to 5 pages included" included />
                     <Feature
                       text="£70 per additional page after page 5"
@@ -247,7 +247,7 @@ export default function Services() {
                 <CardContent className="space-y-4 h-[280px]">
                   <div className="space-y-4">
                     <Feature text="Design and development" included />
-                    <Feature text="£25 a month hosting" included />
+                    <Feature text="£12 a month hosting" included />
                     <Feature text="Up to 5 pages included" included />
                     <Feature
                       text="£70 per additional page after page 5"

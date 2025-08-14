@@ -70,7 +70,7 @@ export default function Services() {
                     <Feature text="Hosting included" included />
                     <Feature text="Single page site" included />
                     <Feature
-                      text="£70 per additional page after page 3"
+                      text="£70 per additional page after page 2"
                       included
                     />
                     <Feature text="7 days a week support" included />
@@ -187,7 +187,7 @@ export default function Services() {
                     <Feature text="£12 a month hosting" included />
                     <Feature text="Single page site" included />
                     <Feature
-                      text="£70 per additional page after page 3"
+                      text="£70 per additional page after page 2"
                       included
                     />
                     <Feature text="7 days a week support" included={false} />
